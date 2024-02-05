@@ -1,0 +1,66 @@
+[
+    {
+        "personnes": [
+            {
+                "pers1": {
+                    "id": 1,
+                    "name": "Aziz Akhannouch",
+                    "relations": [
+                        {
+                            "id": 2,
+                            "name": "salwa akhannouch",
+                            "relation":"epouse"
+                        },
+                        {
+                            "id": 3,
+                            "name": "karim akhannouch",
+                            "relation":"fils"
+                        }
+                    
+                    ]
+                }
+            },
+            {
+                "pers2":{
+                "id": 2,
+                "name": "salwa akhannouch",
+                "relations": [
+                    {
+                         "id": 4,
+                         "name": "pere salwa",
+                         "relation":"pere"
+                    },
+                    {
+                        "id": 1,
+                        "name": "Aziz Akhannouch"
+                    }
+                   
+                
+                ]
+            }
+            },
+            {
+                "pers3":{
+                "id": 3,
+                "name": "karim akhannouch",
+                "relations": [
+                    {
+                        "id": 1 , 
+                        "name": "Aziz Akhannouch"
+                    }
+                ]
+            }
+            },
+            {
+                "pers4" :{
+                "id": 4,
+                "name": "pere salwa",
+                "relations": [
+                  
+                ]
+            }
+          }
+         
+        ]
+    }
+]

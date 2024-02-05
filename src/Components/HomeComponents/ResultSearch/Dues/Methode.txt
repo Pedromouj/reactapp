@@ -1,0 +1,43 @@
+  const fetchAll = async () => {
+    setData([]);
+    setCount((prev) => prev + 1);
+
+    try {
+      // Temporary array to accumulate the newly fetched data
+
+      // Fetch data for each category
+      for (const itm of Categories) {
+        let currentPage = currentPageSource;
+        let categoryData;
+        let organicData = [];
+        while (organicData.length === 0) {
+          const { data } = await axios.get(
+            `${
+              import.meta.env.VITE_DUE_DILL_URL_BASE
+            }/getlast/keywords/${itm}?keyword=${search}&page=${currentPage}`
+          );
+
+          organicData = data?.googleRes?.organic || [];
+          if (organicData.length === 0) {
+            setLoading(true);
+          } else {
+            setLoading(false);
+          }
+          // If the organic data is not empty, update the state and break the loop
+
+          if (organicData.length > 0) {
+            categoryData = { categorie: itm, Data: data };
+            setData((prevData) => [...prevData, categoryData]);
+            setCurrentPageSource((prev) => prev + 1);
+          } else {
+            currentPage++;
+            // Move to the next page for the next iteration
+          }
+        }
+      }
+    } catch (error) {
+      // Handle error
+      console.error("Error fetching data:", error);
+    } finally {
+    }
+  };

@@ -1,0 +1,164 @@
+[
+    {
+        "personnes": [
+            {
+        
+                    "id": 1,
+                    "name": "Nizar  Braka",
+                    "relations": [
+                        {
+                            "id": 2,
+                            "name": "radia el fassi",
+                            "relation":"epouse"
+                        },
+                        {
+                            "id": 3,
+                            "name": "Leila el fassi",
+                            "relation":"fils"
+                        },
+                        {
+                            "id": 6,
+                            "name": "Nizar baraka"
+                        }
+                    
+                    ]
+            },
+            {
+                "id": 2,
+                "name": "radia el fassi",
+                "relations": [
+                 
+                    {
+                        "id": 7,
+                        "name": "Oum el banine el fassi",
+                        "relation":"mère"
+                     },
+                    {
+                        "id": 1,
+                        "name": "Nizar  Braka"
+                    }
+                   ,
+                   {
+                    "id": 5,
+                    "name": "Fihr el fassi",
+                    "relation":"frère"
+                   }
+                    , 
+                    {
+                        "id": 8,
+                        "name": "Abdelmajid el fassi",
+                        "relation" : "frère"
+                    } 
+                    ,
+                    {
+
+                        "id": 9,
+                        "name": "Majida el fassi",
+                        "relation": "soeur"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Abbas el fassi",
+                        "relations": [
+                            {
+                                "id": 10,
+                                "name": "Abdelmajid el fassi",
+                                "relation" : "Test 1"
+                            },
+                            {
+                                "id": 11,
+                                "name": "Miftaha el fassi",
+                                "relation" : "Test 2"
+                            }
+                        ]
+        }
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Leila el fassi"
+            }
+          ,
+
+          {
+            "id": 5,
+            "name": "Non Gar",
+            "relations": [
+                {
+                    "id": 2 , 
+                    "name": "radia el fassi"
+                }
+            ]
+          }
+         ,
+      {
+        "id": 6,
+        "name": "Fihr el fassi",
+        "relations": [
+        
+        ]
+  },
+  {
+    "id": 7,
+    "name": "Oum el banine el fassi",
+    "relations": [
+    
+    ]
+}
+,
+
+{
+    "id": 8,
+    "name": "Abdelmajid el fassi",
+    "relations": [
+    
+    ]
+}
+
+,
+{
+    "id": 9,
+    "name": "Majida el fassi",
+    "relations": [
+    
+    ]
+}
+,
+{
+    "id": 10,
+    "name": "Abdelmajid el fassi",
+    "relations": [
+    
+    ]
+}
+,
+{
+    "id": 11,
+    "name": "Miftaha el fassi",
+    "relations": [
+    
+    ]
+}
+
+,
+ {
+                "id": 4,
+                "name": "Abbas el fassi",
+                "relations": [
+                    {
+                        "id": 10,
+                        "name": "Abdelmajid el fassi",
+                        "relation" : "Test 1"
+                    },
+                    {
+                        "id": 11,
+                        "name": "Miftaha el fassi",
+                        "relation" : "Test 2"
+                    }
+                ]
+      }
+
+
+        ]
+    }
+]

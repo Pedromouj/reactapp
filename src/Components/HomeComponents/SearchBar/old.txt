@@ -1,0 +1,58 @@
+  // const _fetchDataSearch = async () => {
+  //   const usersBaseUrl = import.meta.env.VITE_API_BASE_URL_USERS;
+  //   const promises = UsersInfo?.permissions?.map(
+  //     async (itm) =>
+  //       await axios.post(`${usersBaseUrl}/search/${Search}`, {
+  //         params: { type: itm },
+  //         headers: {
+  //           Authorization: Token,
+  //         },
+  //       })
+  //   );
+  // const responses = await Promise.all(promises);
+  //   console.log(promises);
+  // };
+  // useEffect(() => {
+  //   _fetchDataSearch();
+  // }, []);
+
+
+
+    // const fetchDataSearch = async () => {
+  //   console.log("Token", Token);
+  //   const apiBaseUrl = import.meta.env.VITE_API_BASE_URL;
+  //   const usersBaseUrl = import.meta.env.VITE_API_BASE_URL_USERS;
+  //   // Create an array of promises for the two requests
+  //   const promises = [
+  //     axios.get(`${apiBaseUrl}/complete/search?q=${Search}`),
+  //     axios.post(
+  //       `${usersBaseUrl}/history/add`,
+  //       {
+  //         id_user: UsersInfo.userid,
+  //         keyword: Search,
+  //       },
+  //       {
+  //         headers: {
+  //           Authorization: Token,
+  //         },
+  //       }
+  //     ),
+  //   ];
+
+  //   try {
+  //     // Use Promise.all to execute both requests concurrently
+  //     const [dataResponse, postResponse] = await Promise.all(promises);
+
+  //     // Handle the responses here
+  //     const data = dataResponse.data;
+  //     setData(data?.data);
+  //     // Process data here
+
+  //     // Handle the postResponse if needed
+  //     // const postData = postResponse.data;
+  //     // Process postData here
+  //   } catch (error) {
+  //     // Handle any errors here
+  //     console.error("Error:", error);
+  //   }
+  // };
